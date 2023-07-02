@@ -42,8 +42,8 @@ a{
     color: var(--link-text-color) ;
 }
 .px-18 {
-    padding-right: 6rem;
-    padding-left: 6rem;
+    padding-right: 6rem !important;
+    padding-left: 6rem !important;
 }
 
 
