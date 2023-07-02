@@ -1,0 +1,42 @@
+body{
+    background-color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --gradiant-bg: radial-gradient(circle at 3% -6%,rgba(255,218,161,.59),hsla(0,0%,100%,0) 68%),linear-gradient(180deg,#e9ffe2,#e9ffe2);
+    --blue-btn: #1983dd;
+    --blue-hover-btn:#156fbc;
+    --bs-warning:#e79a0c;
+    --bs-danger:#dc3545;
+    --bs-info:#0dcaf0;
+    --open-sans: 'Open Sans', sans-serif;
+    --title-text-color: #080A2D;
+    --para-texr-color: #333 ;
+    --link-text-color: #888;
+}
+
+h1, h2{    
+/* font-family: 'Merriweather', serif; */
+font-family: 'Roboto', sans-serif;
+color: var(--title-text-color);
+}
+h3, h4{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--title-text-color);
+}
+/* font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    outline: 0;
+    transition: all 0.3s ease-in-out;
+    color: var(--link-text-color);
+}
