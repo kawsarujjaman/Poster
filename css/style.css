@@ -5,6 +5,7 @@ body{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    max-width: 1600px;
 }
 
 :root{
@@ -38,5 +39,25 @@ a{
     text-decoration: none;
     outline: 0;
     transition: all 0.3s ease-in-out;
-    color: var(--link-text-color);
+    color: var(--link-text-color) ;
+}
+
+/* Nav bar */
+.nav-link {    
+    color: var(--title-text-color);
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--para-texr-color);
+}
+.nav-link:hover{
+    color: var(--title-text-color);
+}
+.navbar-toggler {
+    color: rgb(0 0 0);
+    padding: 10px;
+    background-color: var(--title-text-color);
+}
+.dropdown-menu {  
+    min-width: 100%;
+   
 }
