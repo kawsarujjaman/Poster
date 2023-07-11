@@ -1,7 +1,6 @@
 body{
     background-color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -19,13 +18,17 @@ body{
     --title-text-color: #080A2D;
     --para-texr-color: #333 ;
     --link-text-color: #888;
+    --bs-dark-rgb: 33,37,41;
+    --bs-warning-rgb: 231,154,12
 }
 
 h1, h2{    
 /* font-family: 'Merriweather', serif; */
 font-family: 'Roboto', sans-serif;
 color: var(--title-text-color);
+font-size: calc(1.250rem + 1vw);
 }
+
 h3, h4{
     font-family: 'Montserrat', sans-serif;
     color: var(--title-text-color);
@@ -33,7 +36,26 @@ h3, h4{
 /* font-family: 'Fira Sans Condensed', sans-serif;
 font-family: 'Merriweather', serif;
 font-family: 'Roboto Condensed', sans-serif; */
-
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-top: 1rem;
+    font-weight: 700;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6
+{
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
 a{
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
@@ -45,8 +67,19 @@ a{
     padding-right: 6rem !important;
     padding-left: 6rem !important;
 }
+.py-7 {
+    padding-top: 2rem!important;
+    padding-bottom: 2rem!important;
+}
+.text-dark {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity))!important;
+}
 
-
+.business-link:hover{
+    border-color: rgba(var(--bs-warning-rgb),.5)!important;
+    color: #e79a0c!important;
+}
 /* Nav bar */
 .nav-link {    
     color: var(--title-text-color);
@@ -98,3 +131,38 @@ h3.menu-title {
 a.btn.btn-link:hover {
     background-color: #0000d024;
 }
+.btn-link{
+    text-decoration: none;
+}
+.hero-section ul.list-item {
+    font-size: 20px;
+}
+ul.list-item {
+    padding: 0;
+}
+
+
+.bg-md-light-green {
+    background: radial-gradient(circle at 3% -6%,rgba(255,218,161,.59),hsla(0,0%,100%,0) 68%),linear-gradient(180deg,#e9ffe2,#e9ffe2)!important;
+}
+
+.exit-container-lg {
+    width: 100vw;
+    margin-left: -.75rem;
+    --bs-gutter-x: 0.75rem;
+}
+@media (min-width:1200px) {
+  
+    .exit-container-lg {
+        margin-left: calc(-.28*(100vw - 1140px) - .75rem);
+    }
+    .h1, h1 {
+        font-size: 3rem;
+    }
+}
+@media (min-width:992px) {
+    .exit-container-lg {
+        margin-left: calc(-.28*(100vw - 960px) - .75rem);
+    }
+}
+
