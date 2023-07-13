@@ -40,7 +40,7 @@
                     </div>
                 </button>
 
-                
+
                 <div class="collapse navbar-collapse" id="navbar-content">
                     <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
 
@@ -447,8 +447,39 @@
 
                     </ul>
                     <form class="d-flex ms-auto">
-                        <div class="">
-                            <a href="" class="btn btn-link">Iniciar </a>
+                        <div class="">                          
+                            <!-- Modal start -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Iniciar
+                                </button>
+  
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión en Poster</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <form action="">
+                                            <label for="url">Tu dirección en Poster</label>
+                                            <div class="input-group">
+                                               
+                                                <input type="text" name="url" id="url" class="form-control" required>
+                                                <span class="input-group-text">.joinposter.com</span>
+                                            </div>
+                                        </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-link" data-bs-dismiss="modal">¿Olvidaste tu dirección en Poster?</button>
+                                        <button type="button" class="btn btn-primary">Accede </button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
 
                             <a href="" class="btn btn-outline-primary fs-6">
                                 <span>¡Inicia tu prueba gratuita! </span>
@@ -530,7 +561,7 @@
 
 
                                                         <img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
-                                                            src="/images/ipad-mx-mxn.png" alt="">
+                                                            src="images/ipad-mx-mxn.png" alt="">
 
                                                         <!-- </span> -->
                                                     </span>

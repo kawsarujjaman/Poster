@@ -49,3 +49,11 @@ var input = document.querySelector("#telephone");
       $(function(){
         $('.selectpicker').selectpicker();
     });
+
+    // Modal
+    const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
